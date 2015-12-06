@@ -1,0 +1,41 @@
+\makeatletter
+	\def\input@path{{./docs/}{./}{./docs/\TextName/}}
+\makeatother
+
+\usepackage{calc}
+
+\usepackage{multicol}
+
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+\usepackage{fontspec}
+	\setmainfont%[ExternalLocation=fonts/]
+		{Liberation Serif}
+	\setromanfont%[ExternalLocation=fonts/]
+		{Liberation Serif}
+	\setsansfont%[ExternalLocation=fonts/]
+		{Liberation Sans}
+	\setmonofont%[ExternalLocation=fonts/]
+		{Liberation Mono}
+	\newfontfamily\cyrillicfont%[ExternalLocation=fonts/]
+		{Liberation Serif}
+
+\usepackage{graphicx}
+
+\usepackage{geometry}
+	\geometry{left   = 2   cm}
+	\geometry{right  = 1.5 cm}
+	\geometry{top    = 1   cm}
+	\geometry{bottom = 2   cm}
+
+\usepackage{datetime}
+	\newdateformat{CurrentYear}{\THEYEAR}
+
+\usepackage{url}
+\bibliographystyle{ugost2008}
+%\bibliographystyle{gost780s}
+%\bibliographystyle{gost2003}
